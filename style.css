@@ -43,6 +43,7 @@ header {
   border-radius: 5px;
   max-width: 400px;
   width: 100%;
+  box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.1), 2px 2px 6px rgba(0, 0, 0, 0.8);
 }
 
 .select-box.hide {
@@ -80,11 +81,13 @@ header {
   outline: none;
   cursor: pointer;
   transition: all 0.3s ease;
+  box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.1), 2px 2px 6px rgba(0, 0, 0, 0.8);
 }
 
 .options button:hover,
 .btn button:hover {
   transform: scale(0.96);
+  box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.1), 2px 2px 6px rgba(0, 0, 0, 0.8);
 }
 
 .options button.playerX {
@@ -127,6 +130,7 @@ header {
   padding: 7px;
   border-radius: 5px;
   background: #fff;
+  box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.1), 2px 2px 6px rgba(0, 0, 0, 0.8);
 }
 
 .play-board .players {
@@ -171,6 +175,7 @@ header {
   background: #540375;
   border-radius: 5px;
   transition: all 0.3s ease;
+  box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.1), 2px 2px 6px rgba(0, 0, 0, 0.8);
 }
 
 .players.active .slider {
@@ -209,6 +214,7 @@ header {
   text-align: center;
   border-radius: 5px;
   background: #fff;
+  box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.1), 2px 2px 6px rgba(0, 0, 0, 0.8);
 }
 
 .result-box {
@@ -221,6 +227,7 @@ header {
   background: #fff;
   pointer-events: none;
   transform: translate(-50%, -50%) scale(0.9);
+  box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.1), 2px 2px 6px rgba(0, 0, 0, 0.8);
 }
 
 .result-box.show {
@@ -259,4 +266,27 @@ header {
   outline: none;
   cursor: pointer;
   transition: all 0.3s ease;
+  box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.1), 2px 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+@media all and (max-width: 440px) {
+  .select-box {
+    width: 85%;
+  }
+
+  .select-box .title {
+    font-size: 5vw;
+  }
+
+  .play-area section {
+    justify-content: center;
+  }
+
+  .result-box {
+    width: 85%;
+  }
+
+  .result-box .won-text {
+    font-size: 6.5vw;
+  }
 }
